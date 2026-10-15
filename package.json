@@ -1,0 +1,23 @@
+{
+  "name": "aura-farming",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:yandex": "tsc && vite build --mode yandex",
+    "pack:yandex": "npm run build:yandex && node scripts/pack-yandex.mjs"
+  },
+  "devDependencies": {
+    "archiver": "^8.0.0",
+    "fflate": "^0.8.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@fontsource/russo-one": "^5.3.0",
+    "phaser": "^4.2.1"
+  }
+}
